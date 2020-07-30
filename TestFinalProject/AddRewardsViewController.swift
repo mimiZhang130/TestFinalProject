@@ -5,57 +5,37 @@
 //  Created by Mimi Zhang on 7/29/20.
 //  Copyright © 2020 Mimi Zhang. All rights reserved.
 //
-import CoreData
 import UIKit
 
 class AddRewardsViewController: UIViewController {
-//    var nextVC = RewardsViewController()
-    var numOfTrees = Int()
-    var count = Int()
+    var numOfTrees = StaticRewards()
+    
+    func createStaticRewards() -> Int {
+        let swift = StaticRewards()
+        swift.trees = 5
+        return swift.trees
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        numOfTrees.trees = createStaticRewards()
     }
    
-    func getRewards(){
-        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-            if let coreDataTrees = try? context.fetch(Rewards.fetchRequest()) as? [Rewards]{
-                if let theTrees = coreDataTrees {
-                    numOfTrees = theTrees
-                }
-            }
-        }
+    func getRewards() {
+        
     }
     @IBAction func addRewards(_ sender: UIButton) {
-        
-        numOfTrees += 1
-
-        //declaring object reward
-           if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-               let reward = Rewards(entity: Rewards.entity(), insertInto: context)
-        
-        reward.trees = Int16(numOfTrees)
-            try? context.save()
-
-        //Updating data about rewards
-            
-            }
-        
-        //fetching data about Rewards
-           
-        
-       }
+        numOfTrees.trees += 1
+    }
    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if let addVC = segue.destination as? RewardsViewController {
+          addVC.previousVC = self
+        }
+        
     }
-    */
 
 }

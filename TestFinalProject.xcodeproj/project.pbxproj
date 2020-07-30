@@ -18,6 +18,7 @@
 		39CA0F2A24D1F49B000135B6 /* TestFinalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA0F2924D1F49B000135B6 /* TestFinalProjectUITests.swift */; };
 		39CA0F3A24D2150F000135B6 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA0F3924D2150F000135B6 /* RewardsViewController.swift */; };
 		39CA0F3C24D2151D000135B6 /* AddRewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CA0F3B24D2151D000135B6 /* AddRewardsViewController.swift */; };
+		F039407A24D316920084432E /* static.swift in Sources */ = {isa = PBXBuildFile; fileRef = F039407924D316920084432E /* static.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		39CA0F2B24D1F49B000135B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39CA0F3924D2150F000135B6 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		39CA0F3B24D2151D000135B6 /* AddRewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRewardsViewController.swift; sourceTree = "<group>"; };
+		F039407924D316920084432E /* static.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = static.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				39CA0F0824D1F499000135B6 /* ViewController.swift */,
 				39CA0F3924D2150F000135B6 /* RewardsViewController.swift */,
 				39CA0F3B24D2151D000135B6 /* AddRewardsViewController.swift */,
+				F039407924D316920084432E /* static.swift */,
 				39CA0F0A24D1F499000135B6 /* Main.storyboard */,
 				39CA0F1024D1F49B000135B6 /* Assets.xcassets */,
 				39CA0F1224D1F49B000135B6 /* LaunchScreen.storyboard */,
@@ -273,6 +276,7 @@
 				39CA0F0524D1F499000135B6 /* AppDelegate.swift in Sources */,
 				39CA0F3C24D2151D000135B6 /* AddRewardsViewController.swift in Sources */,
 				39CA0F0F24D1F499000135B6 /* TestFinalProject.xcdatamodeld in Sources */,
+				F039407A24D316920084432E /* static.swift in Sources */,
 				39CA0F0724D1F499000135B6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
